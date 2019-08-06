@@ -5,6 +5,24 @@ Sample of reading PostGIS geometries using Micro-ORM Dapper (https://www.nuget.o
 In this sample a PostGIS database is used. However the code can be adapted to any spatial database that is 
 capable of returning geometries in WKB format (like SqlServer or MySql).
 
+
+# Sample code
+
+```
+	var connectionString = $"Host=localhost;Username=postgres;Password=postgres;Database=postgres;Port=5432";
+    SqlMapper.AddTypeHandler(new GeometryTypeHandler());
+    var conn = new NpgsqlConnection(connectionString);
+    conn.Open();
+    var geoms = conn.Query<Geometry>("select ST_AsBinary(wkb_geometry) as geometry from buildings_utrecht").AsList();
+    foreach(var geom in geoms)
+    {
+        var polygon = (Polygon)geom;
+        var points = polygon.ExteriorRing.Points;
+        Console.WriteLine($"number of vertices: {points.Count}");
+    }
+    conn.Close();
+ ```
+
 ## Run program
 
 Get a PostGIS database running with a table with some geometries.
