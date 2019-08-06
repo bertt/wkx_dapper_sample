@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wkx_dapper_sample", "wkx_dapper_sample.csproj", "{203FF3EC-9E15-4FF6-9B00-69FB6C6B8782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{DFFE4C27-125F-47D9-8555-CE251CE89180}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{203FF3EC-9E15-4FF6-9B00-69FB6C6B8782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203FF3EC-9E15-4FF6-9B00-69FB6C6B8782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203FF3EC-9E15-4FF6-9B00-69FB6C6B8782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203FF3EC-9E15-4FF6-9B00-69FB6C6B8782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5772F5DF-96B0-4F0B-8D13-F532FA8A0BBA}
+	EndGlobalSection
+EndGlobal
